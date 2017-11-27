@@ -4,13 +4,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * \* Created with IntelliJ IDEA.
- * \* User: chenjian
- * \* Date: 2017/11/26
- * \* Time: 下午4:38
- * \* To change this template use File | Settings | File Templates.
- * \* Description:
- * \
+ * \* @created with IntelliJ IDEA.
+ * \* @author: chenjian
+ * \* @date: 2017/11/27
+ * \* @time: 下午2:53
+ * \* @to change this template use File | Settings | File Templates.
+ * \* @description:
  */
 
 @RestController
@@ -19,6 +18,11 @@ public class HelloController {
     @RequestMapping(value = "/hello")
     public String hello() {
         return "hello,Spring Boot";
+    }
+
+    @RequestMapping(value = "/value")
+    public String value() {
+        return "hello,Spring Boot value";
     }
 
 }
